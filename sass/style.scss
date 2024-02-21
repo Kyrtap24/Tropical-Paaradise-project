@@ -331,6 +331,14 @@ body {
 	}
 }
 
+// OFFERS
+
+.offers {
+	position: relative;
+
+	@include heroImages('../img/maldives-3220702_640.jpg')
+}
+
 // MEDIA
 
 @media (min-width: 576px) {
