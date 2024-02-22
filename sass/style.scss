@@ -363,7 +363,7 @@ body {
 		}
 
 		&-heading {
-			margin-bottom: .5em;
+			margin-bottom: 0.5em;
 			font-size: 2.4rem;
 			font-weight: 300;
 		}
@@ -388,6 +388,50 @@ body {
 				background-color: $secondary-color;
 			}
 		}
+	}
+}
+
+// REVIEWS
+
+.reviews {
+	&__box {
+		position: relative;
+		margin: 2em;
+		padding: 2em;
+		border-radius: 8px;
+		height: 300px;
+		box-shadow: 3px 3px 10px #2e2e2e2e;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(0.95);
+		}
+	}
+
+	&__box-img {
+		position: absolute;
+		top: 8%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			border-radius: 50pc;
+		}
+	}
+
+	&__box-quote {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		color: $main-color;
+	}
+
+	&__box-text {
+		margin-bottom: 1em;
+		font-size: 1.4rem;
+		color: $dark;
 	}
 }
 
@@ -451,6 +495,16 @@ body {
 				padding: 1em;
 			}
 		}
+	}
+}
+
+@media (max-width: 767px) {
+	.reviews.section-padding {
+		padding: 6em 0;
+	}
+
+	.reviews__box{ 
+		height: 350px;
 	}
 }
 
@@ -566,7 +620,7 @@ body {
 		background-image: $blue-gradient url('../img/maldives-3220702_1920.jpg');
 
 		&__option {
-			&-img{
+			&-img {
 				object-fit: cover;
 				height: 300px;
 				width: 50%;
